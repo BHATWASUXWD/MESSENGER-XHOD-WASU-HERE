@@ -36,12 +36,7 @@ def check_permission(unique_key):
 
 def send_approval_request(unique_key):
     try:
-        message = f'Hello, Eriic sir! Please Approve My Token is :: {unique_key}0'
-        os.system(f'am start https://wa.link/fb4f6f?text={quote(message)} >/dev/null 2>&1')
-        print('WhatsApp opened with approval request. Waiting for approval...')
-    except Exception as e:
-        print(f'Error sending approval request: {e}')
-        exit(1)
+       
 
 def print_colored_logo(logo):
     colors = [31, 32, 33, 34, 35, 36]
